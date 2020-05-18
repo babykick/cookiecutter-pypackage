@@ -20,15 +20,15 @@ import click
 
 #-- Use click --#
 
-# @click.command()
-# @click.argument('arg1')
-# @click.option('-o', '--opt1')
-# def main(args=None):
-#     """Console script for {{cookiecutter.project_slug}}"""
-#     click.echo("Replace this message by putting your code into "
-#                "{{cookiecutter.project_slug}}.cli.main")
-#     click.echo("See click documentation at http://click.pocoo.org/")
+@click.command()
+@click.argument('arg1')
+@click.option('-o', '--opt1', default='', help='...', )
+def main(arg1, opt1):
+    """Console script for {{cookiecutter.project_slug}}"""
+    click.echo("Replace this message by putting your code into "
+               "{{cookiecutter.project_slug}}.cli.main")
+    click.echo("See click documentation at http://click.pocoo.org/")
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
