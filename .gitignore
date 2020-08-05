@@ -94,3 +94,10 @@ target/
 # Cookiecutter
 output/
 python_boilerplate/
+
+# vscode
+.vscode/
+
+# venv
+venv/
+.venv/
